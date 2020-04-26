@@ -19,6 +19,13 @@ class App extends React.Component {
       { image: slide5 },
       { image: slide6 },
     ],
+    news: [
+      { title: "ASUU calls off strike!", date: "today, 9am" },
+      {
+        title: "Online course registration ends on friday by 12 noon",
+        date: "today, 8am",
+      },
+    ],
   };
 
   render() {
