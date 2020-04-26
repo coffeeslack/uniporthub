@@ -41,7 +41,7 @@ export default function SimpleSlider({ slides }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           lazyLoad: false,
-          // dots: false,
+          dots: false,
         },
       },
     ],

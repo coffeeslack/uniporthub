@@ -3,6 +3,17 @@ import "./css/navbar.css";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar(props) {
+  var prevScrollPos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollPos = currentScrollPos;
+  };
+
   const pages = [
     {
       name: "home",
@@ -26,7 +37,7 @@ export default function Navbar(props) {
     },
   ];
   return (
-    <div className="navBar">
+    <div className="navBar" id="navbar">
       <div className="navLogo">
         <span className="logoName">UNIPORT</span>
         <span className="logoHub">hub</span>
