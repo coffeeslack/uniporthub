@@ -33,7 +33,7 @@ function Home(props) {
                 </div>
               }
             >
-              <PageLeft />
+              <PageLeft {...props} />
             </Suspense>
           </div>
           <div className="col-lg-6 pageCenter">

@@ -2,15 +2,15 @@ import React, { lazy, Suspense } from "react";
 const News = lazy(() => import("./NewsFeed"));
 const Blog = lazy(() => import("./BlogFeed"));
 
-function PageLeft() {
+function PageLeft({ news }) {
   return (
     <>
       <div className="sectionLabel">Recent News</div>
       <Suspense fallback={<div>Loading News..</div>}>
         <div className="sectionContent">
-          <News title={"ASUU calls off strike!"} date={"today at 9:00am"} />
-          <News title={"ASUU calls off strike!"} date={"today at 8:30am"} />
-          <News title={"ASUU calls off strike!"} date={"today at 8:22am"} />
+          {news.map((news, i) => (
+            <News key={i} title={news.title} date={news.date} />
+          ))}
         </div>
       </Suspense>
       <div className="sectionLabel">Recent Blogs</div>
