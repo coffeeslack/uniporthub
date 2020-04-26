@@ -1,0 +1,43 @@
+.pageWrapper {
+  background-color: var(--bg-1);
+  margin-top: 40px;
+  padding-bottom: 50px;
+}
+.pageGrid {
+  width: 100% !important;
+  margin: 50px 0 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.sectionLabel {
+  font-family: head;
+  font-size: var(--font-lg);
+  color: var(--color-1);
+}
+.pageLeft,
+.pageRight {
+  padding: 12px !important;
+}
+.pageCenter {
+  padding: 0px 12px;
+  margin-top: 320px;
+}
+.sectionContent {
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 769px) {
+  .pageGrid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .pageLeft,
+  .pageRight {
+    padding: 0px !important;
+  }
+  .pageCenter {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 0px;
+  }
+}

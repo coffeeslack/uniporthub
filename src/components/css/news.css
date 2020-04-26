@@ -1,0 +1,14 @@
+.newsComponent {
+  background-color: var(--bg-white);
+  padding: var(--p-comp);
+  border-radius: var(--b-rad-comp);
+  margin-top: 12px;
+  box-shadow: var(--shadow);
+}
+.newsComponent .newsTitle {
+  font-size: var(--font-md);
+}
+.newsComponent .newsDate {
+  font-size: var(--font-sm);
+  color: var(--color-2);
+}

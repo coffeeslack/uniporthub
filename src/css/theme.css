@@ -1,0 +1,49 @@
+:root {
+  --bg-1: #f9f9f9;
+  --bg-2: black;
+  --bg-3: lightgrey;
+  --bg-white: white;
+  --color-1: black;
+  --color-2: #9b9b9b;
+  --color-grey: lightgrey;
+  --main-color: #3487ef;
+  --p: 15px;
+  --pl: 15px;
+  --pr: 15px;
+  --pt: 15px;
+  --pb: 15px;
+  --p-comp: 12px;
+  --b-rad-comp: 8px;
+  --font-lg: 22px;
+  --font-md: 14.5px;
+  --font-sm: 12px;
+  --shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+  font-family: head;
+  src: url(../fonts/Montserrat.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: main;
+  src: url(../fonts/Raleway-Medium.ttf);
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  font-family: main;
+  font-size: 14px;
+}
+body {
+  background-color: var(--bg-1) !important;
+  width: 100% !important;
+}
+@media screen and (min-width: 769px) {
+  :root {
+    --p: 15px 50px;
+    --pl: 40px;
+    --pr: 40px;
+    --pt: 15px;
+    --pb: 15px;
+  }
+}

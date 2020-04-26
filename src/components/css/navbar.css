@@ -1,0 +1,49 @@
+.navBar {
+  background-color: var(--bg-2);
+  color: var(--color-2);
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 90;
+  width: 100%;
+}
+.logoName {
+  font-family: head;
+  color: var(--main-color);
+}
+.logoHub {
+  font-family: main;
+  color: white;
+  font-weight: 600;
+}
+.navMenu ul {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+.navMenu ul li {
+  display: inline-flex;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: var(--color-2);
+}
+.navMenu ul li:hover {
+  color: white;
+}
+.navMenu ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.activeMenuLink {
+  color: var(--main-color) !important;
+}
+@media screen and (min-width: 769px) {
+  .navBar {
+    padding: 10px 30px;
+  }
+}
